@@ -1,0 +1,1786 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+header{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.918);
+}
+
+.search-container{
+    display: flex;
+    gap: 60px;
+    font-size: 1.2rem;
+
+    
+}
+.bi{
+    color: rgba(0, 0, 0, 0.918);
+    font-weight: 700;
+}
+
+.toggleMenu{
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    display: none;
+
+}
+.navBar{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+.navBar a:link, .navBar a:visited{
+    text-decoration: none;
+    color: #201D1F;
+}
+.navBar a:hover, .navBar a:active, nav a:hover,  nav a:active{
+    color: orange;
+    transition: 0.5s;
+}
+.search-container2{
+    display: flex;
+    gap: 1.5rem;
+}
+.search-container2 i{
+    font-size: 1.2rem;
+}
+/* ********* menu button****** */
+.menuButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 0.01rem solid rgba(43, 43, 43, 0.128);
+    border-radius: 0.3rem;
+    width: 4.5rem;
+    height: 3rem;
+    display: none;
+}
+.menuButton i{
+    font-size: 2rem;
+}
+/* ***************HEROSECTION SECTION  ****************/
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.heroSection{
+    background-color: rgb(248,249,250);
+}
+.heroContainer{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+}
+.heroContainer .image{
+    width: 100%;
+    height: 100%;
+
+   
+}
+.heroContainer .image  img{
+    width: 100%;
+    height:100%;
+}
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248,249,250);
+    gap: 20px;
+  
+}
+.textContainer span{
+    font-size: 20px;
+}
+.textContainer h1{
+    color: #212529;
+    font-size: 3.6rem;
+    font-weight: 700;
+    
+}
+.textContainer button{
+    padding: 0.8rem 1.0rem;
+    color: white;
+    background-color: #343A40;
+    border: 4px solid #343A40;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.textContainer button:focus{
+    border: 4px solid #bcdbfb;
+}
+.textContainer button:hover{
+    background-color:rgba(0, 0, 0, 0.829) ;
+    
+    transition: ease-in 0.5s;
+}
+/* Discover Section */
+.discoverContainer{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    gap: 6px;
+}
+.hr{
+    width: 3px;
+    height: 50px;
+    background-color: red;
+
+}
+/* .discoveryImage{
+    display: flex;
+    background-color: bisque;
+}
+.womanImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: end;
+    width: 1000px;
+    background-color: aliceblue;
+} */
+ .discoveryImage{
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap:20px;
+ }
+ .womanImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248,249,250);
+    position: relative;
+ }
+ .womanImage img{
+    align-self: flex-end;
+    width: 400px;
+    height: 600px;
+
+ }
+ .womanText{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+   
+    width: 180px;
+    height: 70px;
+    background-color: rgb(248,249,250);
+    color: rgb(0, 0, 0);
+    top: 50%;
+    transform:translate(0, 0);
+    
+
+ }
+ .womanText:hover {
+    color: white;
+    transition: 1.5s;
+    background-color: black;
+
+ }
+ .womanDetails p:hover{
+    color: white;
+    transition: 1.5s;
+ }
+
+ .womanDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+  
+
+ }
+ .womanDetails span{
+    font-size: 1.3rem;
+    align-self: last baseline;
+
+ }
+ .womanDetails p{
+    color: grey;
+    font-size: 0.8rem;
+    align-self: last baseline;
+    
+ } 
+
+ .manImage{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    
+ }
+.man{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248,249,250);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+.shoe{
+    background-color: rgb(248,249,250);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+   
+}
+.man img{
+    width: 200px;
+    height: 300px;
+}
+.shoe img{
+    width: 300px;
+    height: 300px;
+}
+
+/* POPULAR SECTION *****************/
+.popularContainer{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 500px 500px;
+    gap: 20px;
+    margin-top: 50px;
+}
+.hr2{
+    width: 3px;
+    height: 25px;
+    background-color: red;
+
+}
+figure{
+    
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+
+}
+figure .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 100%;
+   height: 90%;
+    background-color: rgb(248,249,250);
+}
+figure img{
+    width: 100%;
+    height: 60%;
+}
+.imgPopular{
+    width: 60%;
+    height:100%;
+    align-self: end;
+    
+}
+.imgPopular2{
+    width: 100%;
+    height:90%;
+    align-self: end;
+}
+
+.imgPopular3{
+    width: 60%;
+    height:94%;
+    align-self: end;
+}
+figcaption{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+figcaption p{
+    color:grey;
+    font-size: 1.1rem;
+    
+}
+.priceTag{
+    display: flex;
+    gap: 10px;
+}
+.priceTag p{
+    text-decoration-line:line-through;
+
+}
+.priceStar{
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+
+ 
+}
+.bi-star-fill{
+    color: rgb(255, 191, 0);
+}
+
+/* ************* MOST RATED SECTION ******************* */
+.mostRatedHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 5px;
+}
+.hr3{
+    width: 80px;
+    height: 5px;
+    background-color: rgb(220,53,69);
+    
+}
+.mostRatedContainer{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 500px;
+    gap: 20px;
+    margin-top: 50px;
+    
+}
+
+/* *************UPDATE SECTION ******************* */
+
+.updateSection{
+
+    margin: 300px 0;
+    height:60vh;
+}
+.updateContainer{
+   
+    display: grid;
+    grid-template-columns: 1fr 700px;
+    align-content: centr;
+    justify-items: center;
+    background-color: rgb(248,249,250);
+    
+  
+}
+.updateContainer .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    background-color:rgb(248,249,250);
+    
+   
+    
+   
+}
+.updateContainer .image  img{
+    align-self: end;
+    width: 80%;
+    height: 100%;
+}
+.textContainerUpdate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(248,249,250);
+    gap: 20px;
+}
+.textContainerUpdate span{
+    font-size: 20px;
+}
+.textContainerUpdate h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: rgb(33,37,41);
+    
+}
+.textContainerUpdate button{
+    padding: 15px 20px;
+    border: none;
+    color: white;
+    background-color: rgb(33,37,41);
+    border-radius: 10px;
+    font-size: 16px;
+}
+.textContainerUpdate button:hover{
+    outline:2px blue;
+}
+
+/* ****** FOOTER ************** */
+footer{
+    height: 80vh;
+    
+
+}
+
+.footerContainer{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 400px;
+    position: relative;
+}
+.footerContainer h3{
+    font-weight: 500;
+}
+.promo{
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+
+}
+.promo img{
+    margin-top: 20px;
+    width: 350px;
+    height: 200px;
+    border-radius: 8px;
+}
+.promo span{
+    width: 300px;
+    color: rgb(226,88,101);
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.promo p{
+    font-size: 15px;
+    color: grey;
+}
+
+.quickLink{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    gap: 25px;
+}
+.quickLink a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: grey;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 35px;
+    font-size: 1.2rem;
+}
+.address i{
+    color: rgb(226,88,101);
+
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight:400;
+   color: rgb(45,49,53);
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: 1%;
+    top: 45%;
+}
+.send{
+    width: 350px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.send input{
+    width:100%; 
+    height: 45px;
+    padding: 0 10px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid rgba(128, 128, 128, 0.139);
+    color: grey;
+    outline: none;
+}
+.send input:hover{
+    transition: 0.5s;
+    border:1px solid rgb(226,88,101);
+}
+.send input::placeholder{
+    color: grey;
+}
+.send button{
+    right: 1%;
+    position: absolute;
+    width: 20%;
+    height: 80%;
+    background-color: rgb(226,88,101);
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
+.footerContainer .copywrite{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    grid-column: 2/-1;
+    color: grey;
+}
+
+@media only screen and (max-width: 800px){
+    header{
+        justify-content: space-between;
+        height: 5.2rem;
+        background-color: white;
+    }
+
+    .menuButton{
+        display: block;
+        background: white;
+        border: 0.1rem solid rgba(43, 43, 43, 0.128);
+        border-radius: 0.3rem;
+        width: 4.5rem;
+        height: 3.5rem;
+    
+    }
+    nav{
+        display: none;
+    }
+    .search-container{
+        display: none;
+    }
+    .container{
+        width: 720px;
+        margin: 0 auto;
+    }  
+    .heroContainer{
+        background-color:#201D1F;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      
+    }
+    .heroContainer .image{
+        
+        overflow: hidden;
+        width: 100%; 
+        height: 100%;
+    
+    }
+    .heroContainer .image  img{
+    padding-left: 0%;
+     width: 100%;
+    height:100%; 
+    object-fit: cover;
+    
+    
+}
+.textContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    position: absolute;
+    top: 45%;
+    right: 0%;
+    
+    background: none;
+}
+
+.textContainer span{
+    font-size: 1rem;
+    color: #ffffff;
+}
+.textContainer h1{
+    color: #ffffff;
+    font-size: 2.6rem;
+    font-weight: 700;
+    
+}
+.textContainer button{
+    padding: 0.8rem 1.0rem;
+    color: white;
+    background-color: #343A40;
+    border: 4px solid #343A40;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.textContainer button:focus{
+    border: 4px solid #bcdbfb49;
+}
+.textContainer button:hover{
+    background-color:rgba(0, 0, 0, 0.829) ;
+    
+    transition: ease-in 0.5s;
+}
+/* discovery Section */
+.discoverContainer{
+    margin-top: 50px;
+}
+
+.discoveryImage{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    gap:20px;
+ }
+ .womanImage img{
+    width: 100%;
+    height: 100%;
+ }
+ .manImage{
+    gap: 70px;
+ }
+ .man img{
+    width: 100%;
+    height: 100%;
+}
+.shoe img{
+    width: 100%;
+    height: 100%;
+}
+/* POPULAR CONTAINER */
+.popularContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+}
+figure .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 100%;
+   height: 100%;
+    background-color: rgb(248,249,250);
+}
+figure img{
+    width: 100%;
+    height: 100%;
+}
+/* Most rated */
+.mostRatedContainer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    
+}
+/* Update Container */
+
+.updateContainer{
+    background-color:#a3076f;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  
+}
+.updateContainer .image{
+    width: 100%; 
+    height: 90%;
+    background-color:#201D1F;
+
+}
+.updateContainer .image  img{
+padding-left: 0%;
+ width: 100%;
+height:100%; 
+object-fit:cover;
+
+
+}
+.textContainerUpdate{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+gap: 10px;
+position: absolute;
+top: 45%;
+right: 0%;
+
+background: none;
+}
+
+.textContainerUpdate span{
+font-size: 2rem;
+color: #ffffff;
+}
+.textContainerUpdate h1{
+color: #ffffff;
+font-size: 6rem;
+font-weight: 700;
+
+}
+.textContainerUpdate button{
+padding: 0.8rem 1.0rem;
+color: white;
+background-color: #343A40;
+border: 4px solid #343A40;
+border-radius: 10px;
+font-size: 1.1rem;
+cursor: pointer;
+z-index: 20;
+}
+
+.textContainerUpdate button:focus{
+border: 4px solid #bcdbfb49;
+}
+.textContainerUpdate button:hover{
+background-color:rgba(0, 0, 0, 0.829) ;
+
+transition: ease-in 0.5s;
+}
+/* ***** footer */
+
+.footerContainer{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 50px;
+    position: relative;
+}
+.promo img{
+    margin-top: 20px;
+    width: 600px;
+    height: 400px;
+    border-radius: 8px;
+}
+.promo span{
+    width: 500px;
+    color: rgb(226,88,101);
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+.promo p{
+    font-size: 1rem;
+    color: grey;
+}
+
+.quickLink a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: grey;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 35px;
+    font-size: 1.2rem;
+}
+.address i{
+    color: rgb(226,88,101);
+
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight:400;
+   color: rgb(45,49,53);
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    left: 2%;
+    top: 85%;
+}
+.footer{
+    height: 100vh;
+    margin-top: 400px;
+    background-color:rgb(248,249,250) ;
+}
+.footerContainer .copywrite{
+    margin-top: 120px;
+    margin-bottom: 50px;
+    grid-column: 2/-1;
+    color: grey;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+}
+.quickLinkContainer{
+    width: 100%;
+}
+.quickLink{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 20px;
+}
+.send input:hover{
+    transition: 0.5s;
+    border:1px solid rgb(226,88,101);
+}
+.send input::placeholder{
+    color: grey;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 35px;
+    font-size: 1.1rem;
+}
+
+}
+
+
+@media only screen and (max-width: 414px){
+    header{
+        justify-content: space-between;
+        height: 5rem;
+        background-color: white;
+    }
+    .menuButton{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .search-container{
+        display: none;
+    }
+    .container{
+        width: 370px;
+        margin: 0 auto;
+    }  
+    .heroContainer{
+        background-color:#201D1F;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      
+    }
+    .heroContainer .image{
+        
+        overflow: hidden;
+        width: 412px; 
+        height: 100%;
+    
+    }
+    .heroContainer .image  img{
+    padding-left: 0%;
+     width: 100%;
+    height:100%; 
+    object-fit: cover;
+    
+    
+}
+.textContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    position: absolute;
+    top: 45%;
+    right: 0%;
+    
+    background: none;
+}
+
+.textContainer span{
+    font-size: 1rem;
+    color: #ffffff;
+}
+.textContainer h1{
+    color: #ffffff;
+    font-size: 2.6rem;
+    font-weight: 700;
+    
+}
+.textContainer button{
+    padding: 0.8rem 1.0rem;
+    color: white;
+    background-color: #343A40;
+    border: 4px solid #343A40;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.textContainer button:focus{
+    border: 4px solid #bcdbfb49;
+}
+.textContainer button:hover{
+    background-color:rgba(0, 0, 0, 0.829) ;
+    
+    transition: ease-in 0.5s;
+}
+/* discovery Section */
+.discoverContainer{
+    margin-top: 50px;
+}
+
+.discoveryImage{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    gap:20px;
+ }
+ .manImage{
+    gap: 70px;
+ }
+ .man img{
+    width: 320px;
+    height: 480px;
+}
+.shoe img{
+    width: 420px;
+    height: 420px;
+}
+/* POPULAR CONTAINER */
+.popularContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+}
+figure .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 100%;
+   height: 100%;
+    background-color: rgb(248,249,250);
+}
+figure img{
+    width: 100%;
+    height: 100%;
+}
+/* Most rated */
+.mostRatedContainer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    
+}
+/* Update Container */
+.updateContainer{
+    background-color:#201D1F;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  
+}
+.updateContainer .image{
+    
+    width: 100%; 
+    height: 100%;
+
+}
+.updateContainer .image  img{
+padding-left: 0%;
+ width: 100%;
+height:100%; 
+object-fit:cover;
+
+
+}
+.textContainerUpdate{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+gap: 10px;
+position: absolute;
+top: 45%;
+right: 0%;
+
+background: none;
+}
+
+.textContainerUpdate span{
+font-size: 1rem;
+color: #ffffff;
+}
+.textContainerUpdate h1{
+color: #ffffff;
+font-size: 2.6rem;
+font-weight: 700;
+
+}
+.textContainerUpdate button{
+padding: 0.8rem 1.0rem;
+color: white;
+background-color: #343A40;
+border: 4px solid #343A40;
+border-radius: 10px;
+font-size: 1.1rem;
+cursor: pointer;
+z-index: 20;
+}
+
+.textContainerUpdate button:focus{
+border: 4px solid #bcdbfb49;
+}
+.textContainerUpdate button:hover{
+background-color:rgba(0, 0, 0, 0.829) ;
+
+transition: ease-in 0.5s;
+}
+/* ***** footer */
+
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    left: 0%;
+    top: 75%;
+}
+.promo img{
+    width: 350px;
+    height: 200px;
+}
+.promo span{
+    font-size: 1.3rem;
+    width: 250px;
+}
+.footer{
+    height: 145vh;
+    margin-top: 200px;
+    background-color:rgb(248,249,250) ;
+}
+.footerContainer .copywrite{
+    margin-top: 250px;
+    margin-bottom: 50px;
+    grid-column: 2/-1;
+    color: grey;
+    font-size: 1rem;
+    text-align: center;
+}
+.quickLink{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    gap: 10px;
+}
+.send input:hover{
+    transition: 0.5s;
+    border:1px solid rgb(226,88,101);
+}
+.send input::placeholder{
+    color: grey;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 35px;
+    font-size: 1.1rem;
+}
+
+}
+@media only screen and (max-width: 412px){
+    header{
+        justify-content: space-between;
+        height: 5rem;
+        background-color: white;
+    }
+    .menuButton{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .search-container{
+        display: none;
+    }
+    .container{
+        width: 370px;
+        margin: 0 auto;
+    }  
+    .heroContainer{
+        background-color:#201D1F;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      
+    }
+    .heroContainer .image{
+        
+        overflow: hidden;
+        width: 412px; 
+        height: 100%;
+    
+    }
+    .heroContainer .image  img{
+    padding-left: 0%;
+     width: 100%;
+    height:100%; 
+    object-fit: cover;
+    
+    
+}
+.textContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    position: absolute;
+    top: 45%;
+    right: 0%;
+    
+    background: none;
+}
+
+.textContainer span{
+    font-size: 1rem;
+    color: #ffffff;
+}
+.textContainer h1{
+    color: #ffffff;
+    font-size: 2.6rem;
+    font-weight: 700;
+    
+}
+.textContainer button{
+    padding: 0.8rem 1.0rem;
+    color: white;
+    background-color: #343A40;
+    border: 4px solid #343A40;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.textContainer button:focus{
+    border: 4px solid #bcdbfb49;
+}
+.textContainer button:hover{
+    background-color:rgba(0, 0, 0, 0.829) ;
+    
+    transition: ease-in 0.5s;
+}
+/* discovery Section */
+.discoverContainer{
+    margin-top: 50px;
+}
+
+.discoveryImage{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    gap:20px;
+ }
+ .manImage{
+    gap: 70px;
+ }
+ .man img{
+    width: 320px;
+    height: 480px;
+}
+.shoe img{
+    width: 420px;
+    height: 420px;
+}
+/* POPULAR CONTAINER */
+.popularContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+}
+figure .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 100%;
+   height: 100%;
+    background-color: rgb(248,249,250);
+}
+figure img{
+    width: 100%;
+    height: 100%;
+}
+/* Most rated */
+.mostRatedContainer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    
+}
+/* Update Container */
+.updateContainer{
+    background-color:#201D1F;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  
+}
+.updateContainer .image{
+    
+    width: 100%; 
+    height: 100%;
+
+}
+.updateContainer .image  img{
+padding-left: 0%;
+ width: 100%;
+height:100%; 
+object-fit:cover;
+
+
+}
+.textContainerUpdate{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+gap: 10px;
+position: absolute;
+top: 45%;
+right: 0%;
+
+background: none;
+}
+
+.textContainerUpdate span{
+font-size: 1rem;
+color: #ffffff;
+}
+.textContainerUpdate h1{
+color: #ffffff;
+font-size: 2.6rem;
+font-weight: 700;
+
+}
+.textContainerUpdate button{
+padding: 0.8rem 1.0rem;
+color: white;
+background-color: #343A40;
+border: 4px solid #343A40;
+border-radius: 10px;
+font-size: 1.1rem;
+cursor: pointer;
+z-index: 20;
+}
+
+.textContainerUpdate button:focus{
+border: 4px solid #bcdbfb49;
+}
+.textContainerUpdate button:hover{
+background-color:rgba(0, 0, 0, 0.829) ;
+
+transition: ease-in 0.5s;
+}
+/* ***** footer */
+
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    left: 0%;
+    top: 80%;
+}
+.footer{
+    height: 145vh;
+    margin-top: 200px;
+    background-color:rgb(248,249,250) ;
+}
+.footerContainer .copywrite{
+    margin-top: 120px;
+    margin-bottom: 50px;
+    grid-column: 2/-1;
+    color: grey;
+    font-size: 1rem;
+    text-align: center;
+}
+.quickLink{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    gap: 10px;
+}
+.send input:hover{
+    transition: 0.5s;
+    border:1px solid rgb(226,88,101);
+}
+.send input::placeholder{
+    color: grey;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 35px;
+    font-size: 1.1rem;
+}
+
+}
+@media only screen and (max-width: 393px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5rem;
+        background-color: white;
+        
+    }
+    .container{
+        width: 340px;
+        margin: 0 auto;
+        overflow-y: hidden;
+    }
+    .womanImage{
+        overflow-y: hidden;
+    }
+    .womanImage img{
+        align-self: flex-end;
+        width: 350px;
+        height: 550px;
+    
+     }
+    .menuButton{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .search-container{
+        display: none;
+    }
+    .heroContainer .image{
+        overflow: hidden;
+        width: 100%; 
+        height: 100%;
+        background-color: #212529;
+    }
+    .heroContainer .image  img{
+        padding-left: 0%;
+         width: 115%;
+        height:100%; 
+        object-fit: cover;
+        
+        
+    }
+    .heroContainer{
+        background-color:#201D1F;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      
+    }
+    .textContainer{
+        width: 100%;
+    }
+    .textContainer span{
+        font-size: 0.8rem;
+        color: #ffffff;
+    }
+    .textContainer h1{
+        color: #ffffff;
+        font-size: 2.2rem;
+        font-weight: 700;
+        
+    }
+    .man img{
+        width: 300px;
+        height: 480px;
+    }
+    .shoe img{
+        width: 300px;
+        height: 350px;
+    }
+    .discoverContainer, .popularSection, .mostRatedSection, .updateSection, footer{
+        margin-top: 100px;
+    }
+    .quickLink{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .send input:hover{
+        transition: 0.5s;
+        border:1px solid rgb(226,88,101);
+    }
+    .send input::placeholder{
+        color: grey;
+    }
+    .address{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 35px;
+        font-size: 1.1rem;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        left: 0%;
+        top: 84%;
+    }
+    .send{
+        width: 300px;
+    }
+    .promo img{
+        margin-top: 20px;
+        width: 300px;
+        height: 200px;
+        border-radius: 8px;
+    }
+    .updateContainer .image{
+    
+        width: 100%; 
+        height: 100%;
+        background-color: #212529;
+    
+    }
+    
+}
+
+
+@media only screen and (max-width: 360px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5rem;
+        background-color: white;
+        overflow-y: hidden;
+    }
+    .container{
+        width: 320px;
+        margin: 0 auto;
+        overflow-y: hidden;
+    }
+    .womanImage{
+        overflow-y: hidden;
+    }
+    .womanImage img{
+        align-self: flex-end;
+        width: 320px;
+        height: 520px;
+    
+     }
+    .menuButton{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .search-container{
+        display: none;
+    }
+    .heroContainer .image{
+        overflow: hidden;
+        width: 100%; 
+        height: 100%;
+        background-color: #212529;
+    }
+    .heroContainer .image  img{
+        padding-left: 0%;
+         width: 110%;
+        height:100%; 
+        object-fit: cover;
+        
+        
+    }
+    .heroContainer{
+        background-color:#201D1F;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      
+    }
+    .textContainer{
+        width: 100%;
+    }
+    .textContainer span{
+        font-size: 0.8rem;
+        color: #ffffff;
+    }
+    .textContainer h1{
+        color: #ffffff;
+        font-size: 2.2rem;
+        font-weight: 700;
+        
+    }
+    .man img{
+        width: 300px;
+        height: 480px;
+    }
+    .shoe img{
+        width: 300px;
+        height: 350px;
+    }
+    .discoverContainer, .popularSection, .mostRatedSection, .updateSection, footer{
+        margin-top: 100px;
+    }
+    .quickLink{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .send input:hover{
+        transition: 0.5s;
+        border:1px solid rgb(226,88,101);
+    }
+    .send input::placeholder{
+        color: grey;
+    }
+    .address{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 35px;
+        font-size: 1.1rem;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        left: 0%;
+        top: 84%;
+    }
+    .send{
+        width: 300px;
+    }
+    .promo img{
+        margin-top: 20px;
+        width: 300px;
+        height: 200px;
+        border-radius: 8px;
+    }
+    .updateContainer .image{
+    
+        width: 100%; 
+        height: 100%;
+        background-color: #212529;
+    
+    }
+    
+}
+
+
+@media only screen and (max-width: 320px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5rem;
+        background-color: white;
+        overflow-y: hidden;
+        position: relative;
+    }
+
+    .toggleMenu{
+        display: none
+    }
+    .container{
+        width: 300px;
+        margin: 0 auto;
+        overflow-y: hidden;
+    }
+    .womanImage{
+        overflow-y: hidden;
+    }
+    .womanImage img{
+        align-self: flex-end;
+        width: 300px;
+        height: 500px;
+    
+     }
+    .menuButton{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .search-container{
+        display: none;
+    }
+    .heroContainer .image{
+        overflow: hidden;
+        width: 100%; 
+        height: 100%;
+        background-color: #212529;
+    }
+    .heroContainer .image  img{
+        padding-left: 0%;
+         width: 135%;
+        height:100%; 
+        object-fit: cover;
+        
+        
+    }
+    .heroContainer{
+        background-color:#201D1F;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      
+    }
+    .textContainer{
+        width: 100%;
+    }
+    .textContainer span{
+        font-size: 0.8rem;
+        color: #ffffff;
+    }
+    .textContainer h1{
+        color: #ffffff;
+        font-size: 2.2rem;
+        font-weight: 700;
+        
+    }
+    .man img{
+        width: 300px;
+        height: 480px;
+    }
+    .shoe img{
+        width: 300px;
+        height: 350px;
+    }
+    .discoverContainer, .popularSection, .mostRatedSection, .updateSection, footer{
+        margin-top: 100px;
+    }
+    .quickLink{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .send input:hover{
+        transition: 0.5s;
+        border:1px solid rgb(226,88,101);
+    }
+    .send input::placeholder{
+        color: grey;
+    }
+    .address{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 35px;
+        font-size: 1.1rem;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        left: 0%;
+        top: 84%;
+    }
+    .send{
+        width: 300px;
+    }
+    .promo span{
+        font-size: 1rem;
+        width: 280px;
+    }
+    .promo img{
+        margin-top: 20px;
+        width: 300px;
+        height: 200px;
+        border-radius: 8px;
+    }
+    .updateContainer .image{
+    
+        width: 100%; 
+        height: 100%;
+        background-color: #212529;
+    
+    }
+    .address{
+        font-size: 1rem;
+    }
+    footer{
+       
+        
+    }
+    
+}
+
